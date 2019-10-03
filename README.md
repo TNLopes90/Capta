@@ -1,6 +1,6 @@
 ## Capta
 
-### Create migration and database
+### Migration and database
 
 dotnet ef --startup-project ..\Capta.WebAPI\  migrations add init
 
