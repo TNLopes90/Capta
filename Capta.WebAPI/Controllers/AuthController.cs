@@ -44,6 +44,7 @@ namespace Capta.WebAPI.Controllers
         }
 
         [HttpPost("RegisterUser")]
+        [AllowAnonymous]
         public async Task<IActionResult> RegisterUser(UserDTO model)
         {
             try
