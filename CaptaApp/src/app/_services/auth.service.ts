@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
 })
 export class AuthService {
 
-  baseURL = 'http://localhost:5000/api/auth/';
+  baseURL = 'https://localhost:5001/api/auth/';
   jwtHelper = new JwtHelperService();
   decodedToken: any;
 

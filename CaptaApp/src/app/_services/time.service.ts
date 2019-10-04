@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class TimeService {
 
-  baseURL = 'http://localhost:5000/api/time';
+  baseURL = 'https://localhost:5001/api/time';
 
   constructor(private http: HttpClient) { }
 

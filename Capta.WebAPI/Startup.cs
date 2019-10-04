@@ -35,7 +35,7 @@ namespace Capta.WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<DataContext>(d => d.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<DataContext>(d => d.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             IdentityBuilder builder = services.AddIdentityCore<User>(opt => {
                 opt.Password.RequiredLength = 6;
@@ -90,7 +90,7 @@ namespace Capta.WebAPI
 
             app.UseAuthentication();
 
-            //app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
             app.UseCors(c => c.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseMvc();
         }

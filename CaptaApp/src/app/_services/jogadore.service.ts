@@ -8,7 +8,7 @@ import { Jogador } from '../_models/Jogador';
 
 export class JogadoreService {
 
-  baseURL = 'http://localhost:5000/api/jogador';
+  baseURL = 'https://localhost:5001/api/jogador';
   constructor(private http: HttpClient) { }
 
 }
