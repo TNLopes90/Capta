@@ -49,6 +49,11 @@
           class="invalid-feedback">
           Usuário é obrigatório.
         </div>
+        <div *ngIf="registerForm.get('userName').hasError('minlength') &&
+        registerForm.get('userName').touched"
+        class="invalid-feedback">
+        Deve conter no mínimo 3 caracters
+      </div>
       </div>
       <div formGroupName="passwords">
         <div class="form-group">
