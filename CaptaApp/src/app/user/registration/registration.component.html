@@ -12,7 +12,7 @@
         [ngClass]="{'is-invalid': registerForm.get('fullName').errors &&
                                   registerForm.get('fullName').touched,
                     'is-valid': !registerForm.get('fullName').errors }"
-          placeholder="Insira o Nome Completo"/>
+          placeholder="Digite seu nome completo"/>
         <div *ngIf="registerForm.get('fullName').hasError('required') &&
                     registerForm.get('fullName').touched"
           class="invalid-feedback">
@@ -25,7 +25,7 @@
           [ngClass]="{ 'is-invalid': registerForm.get('email').errors &&
                                      registerForm.get('email').touched,
                         'is-valid': !registerForm.get('email').errors}"
-          placeholder="Insira o Nome Completo"/>
+          placeholder="Digite seu email"/>
         <div *ngIf="registerForm.get('email').hasError('required') &&
                     registerForm.get('email').touched"
           class="invalid-feedback">
@@ -43,7 +43,7 @@
           [ngClass]="{'is-invalid': registerForm.get('userName').errors &&
                                     registerForm.get('userName').touched,
                       'is-valid': !registerForm.get('userName').errors}"
-          placeholder="Insira o nome de Usuário"/>
+          placeholder="Digite seu username"/>
         <div *ngIf="registerForm.get('userName').hasError('required') &&
                     registerForm.get('userName').touched"
           class="invalid-feedback">
@@ -62,7 +62,7 @@
             [ngClass]="{ 'is-invalid': registerForm.get('passwords.password').errors &&
                                        registerForm.get('passwords.password').touched,
                           'is-valid': !registerForm.get('passwords.password').errors}"
-            placeholder="Digite uma Senha" />
+            placeholder="Digite sua Senha" />
             <div *ngIf="registerForm.get('passwords.password').hasError('minlength') &&
             registerForm.get('passwords.password').touched"
             class="invalid-feedback">
@@ -82,7 +82,7 @@
                          ||registerForm.get('passwords.confirmPassword').hasError('mismatch')
                          && registerForm.get('passwords.confirmPassword').touched,
                          'is-valid': !registerForm.get('passwords.confirmPassword').errors }"
-            placeholder="Confirme a Senha" />
+            placeholder="Confirme sua senha" />
           <div *ngIf="registerForm.get('passwords.confirmPassword').hasError('required') &&
                       registerForm.get('passwords.confirmPassword').touched"
             class="invalid-feedback">
